@@ -10,7 +10,7 @@ header{
     height: 7vh;
     background-color: #FFFFFF;
 }
-h1, h2, h3, p, .bouton-lire{
+h1, h2, h3, p, .bouton-font{
     color: #3C3B3B;
     font-family: "Raleway", Helvetica, sans-serif;
 }
@@ -39,16 +39,24 @@ u, .pointiller{
 }
 .bouton{
     background-color: transparent;
-    border-color: #646464;
     border: 2px solid #c2c2c2;
     font-weight: bold;
     height: 10vh;
-    width: 35vw;
-    margin-bottom: 20px;
+    width: 55vw;
+    margin: 40px 0;
 }
 .bouton:hover{
     color: #2EBAAE;
     border-color: #2EBAAE;
+}
+.bouton-retour{
+    color: #c2c2c2;
+    background-color: transparent;
+    border: 2px solid #c2c2c2;
+    font-weight: bold;
+    height: 10vh;
+    width: 55vw;
+    margin: 40px 0;
 }
 
 .grande-div{
@@ -67,14 +75,36 @@ u, .pointiller{
 img{
     margin: 20px;
 }
-.image-div1{
+.image-div-presentation{
     width: 10vw;
 }
 .image-icone{
     border-radius: 20px;
 }
+.div-image-blog{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.image-blog{
+    margin: auto 0;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.image-blog:hover{
+    transform: scale(1.1);
+}
 .texte-blog{
+    padding: 2vh 20vw;
+    text-align: justify;
+    line-height: 4vh;
+}
+.texte-titre{
     padding: 0 20vw;
+    text-align: center;
+    line-height: 4vh;
+    word-spacing: 10px;
 }
 .flex-column{
     display: flex;
@@ -85,5 +115,5 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
+    width: 45vw;
 }
