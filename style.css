@@ -25,11 +25,12 @@ h2{
     font-weight: 800;
     letter-spacing: 1px;
 }
-h3{
+h3, .small{
     font-size: small;
 }
-p{
+p, .small{
    color: #646464;
+   cursor: initial;
 }
 u, .pointiller{
     text-decoration: underline dotted;
@@ -37,8 +38,12 @@ u, .pointiller{
 .texte-hover:hover{
     color: #2EBAAE;
     text-decoration: none;
+    cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
 .bouton-navbar{
     height: 7vh;
     width: 15vw;
@@ -47,9 +52,6 @@ u, .pointiller{
     border: none;
     border-left: 1px solid #c2c2c2;
     background-color: transparent;
-}
-.bouton-navbar:hover{
-    color: #2EBAAE;
 }
 .bouton{
     background-color: transparent;
@@ -73,6 +75,7 @@ u, .pointiller{
     width: 55vw;
     margin: 40px 0;
     font-weight: 800;
+    cursor: auto;
 }
 
 .grande-div{
@@ -103,12 +106,15 @@ u, .pointiller{
 
 img{
     margin: 20px;
+    cursor: pointer;
 }
 .image-div-presentation{
     width: 10vw;
 }
 .image-icone{
     border-radius: 20px;
+    margin: 10px;
+    margin-top: 0;
 }
 .div-image-blog{
     margin: 0;
@@ -128,6 +134,13 @@ img{
     margin: 0;
     width: 100%;
     overflow: hidden;
+}
+.div-image-raccourcie{
+    height: 10vh;
+    width: 8vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .image-petit-blog{
     width: 100%;
@@ -151,6 +164,12 @@ img{
     text-align: center;
     line-height: 4vh;
     word-spacing: 10px;
+}
+.texte-petit-blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px;
 }
 .flex-column{
     display: flex;
