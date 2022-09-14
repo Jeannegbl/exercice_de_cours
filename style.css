@@ -1,5 +1,7 @@
 body{
     background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;
@@ -14,6 +16,18 @@ h1, h2, h3, p, .bouton-font{
     color: #3C3B3B;
     font-family: "Raleway", Helvetica, sans-serif;
 }
+
+h1{
+    font-size: larger;
+    letter-spacing: 1px;
+}
+h2{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: small;
+}
 p{
    color: #646464;
 }
@@ -27,8 +41,8 @@ u, .pointiller{
 
 .bouton-navbar{
     height: 7vh;
-    width: 5vw;
-    font-size: large;
+    width: 15vw;
+    font-size: 30px;
     color: grey;
     border: none;
     border-left: 1px solid #c2c2c2;
@@ -44,6 +58,7 @@ u, .pointiller{
     height: 10vh;
     width: 55vw;
     margin: 40px 0;
+    font-weight: 800;
 }
 .bouton:hover{
     color: #2EBAAE;
@@ -57,6 +72,7 @@ u, .pointiller{
     height: 10vh;
     width: 55vw;
     margin: 40px 0;
+    font-weight: 800;
 }
 
 .grande-div{
@@ -64,12 +80,25 @@ u, .pointiller{
     border-top: transparent;
 }
 .div-presentation{
-    border-bottom: 1px solid #c2c2c2;
     padding: 20px;
 }
 .div-blog{
     background-color: #FFFFFF;
     margin-bottom: 50px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.barre-div{
+    width: 55vw;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.petit-blog{
+    width: 55vw;
+    margin: 5vh 0;
+    border: 0.5px solid #c2c2c2;
+    background-color: #FFFFFF;
 }
 
 img{
@@ -91,14 +120,31 @@ img{
     width: 100%;
     transition: 0.4s;
 }
-
 .image-blog:hover{
+    transform: scale(1.1);
+}
+
+.div-image-petit-blog{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.image-petit-blog{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+.image-petit-blog:hover{
     transform: scale(1.1);
 }
 .texte-blog{
     padding: 2vh 20vw;
     text-align: justify;
     line-height: 4vh;
+}
+.titre{
+    padding: 20px;
 }
 .texte-titre{
     padding: 0 20vw;
