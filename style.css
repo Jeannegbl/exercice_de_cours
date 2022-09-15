@@ -1,15 +1,16 @@
 body{
     background-color: #F4F4F4;
     margin: 0;
-    padding: 0;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #c2c2c2;
-    position: sticky;
-    height: 7vh;
+    border: 1px solid rgba(160, 160, 160, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 6vh;
     background-color: #FFFFFF;
 }
 h1, h2, h3, p, .bouton-font{
@@ -18,19 +19,25 @@ h1, h2, h3, p, .bouton-font{
 }
 
 h1{
-    font-size: larger;
-    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 15px;
 }
 h2{
     font-weight: 800;
-    letter-spacing: 1px;
+    font-size: 20px;
 }
-h3, .small{
-    font-size: small;
+h3{
+    font-size: 10px;
+    margin: 2vh 0;
 }
-p, .small{
+p{
    color: #646464;
    cursor: initial;
+   font-size: 12px;
+}
+.about{
+    font-weight: 800;
+    font-size: 12px;
 }
 u, .pointiller{
     text-decoration: underline dotted;
@@ -45,18 +52,16 @@ button{
     cursor: pointer;
 }
 .bouton-navbar{
-    height: 7vh;
+    height: 6vh;
     width: 15vw;
     font-size: 30px;
-    color: grey;
     border: none;
-    border-left: 1px solid #c2c2c2;
+    border-left: 1px solid rgba(160, 160, 160, 0.3);
     background-color: transparent;
 }
 .bouton{
     background-color: transparent;
-    border: 2px solid #c2c2c2;
-    font-weight: bold;
+    border: 2px solid rgba(160, 160, 160, 0.3);
     height: 10vh;
     width: 55vw;
     margin: 40px 0;
@@ -67,40 +72,37 @@ button{
     border-color: #2EBAAE;
 }
 .bouton-retour{
-    color: #c2c2c2;
+    color: rgba(160, 160, 160, 0.3);
     background-color: transparent;
-    border: 2px solid #c2c2c2;
-    font-weight: bold;
+    border: 2px solid rgba(160, 160, 160, 0.3);
     height: 10vh;
     width: 55vw;
-    margin: 40px 0;
     font-weight: 800;
     cursor: auto;
 }
+.bouton-lireplus{
+    height: 7vh;
+}
 
 .grande-div{
-    border: 1px solid #c2c2c2;
+    border: 1px solid rgba(160, 160, 160, 0.3);
     border-top: transparent;
-}
-.div-presentation{
-    padding: 20px;
+    padding-top: 10vh;
 }
 .div-blog{
     background-color: #FFFFFF;
-    margin-bottom: 50px;
-    border-top: 1px solid #c2c2c2;
-    border-bottom: 1px solid #c2c2c2;
+    margin-bottom: 5vh;
+    border-top: 1px solid rgba(160, 160, 160, 0.3);
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
 }
 
 .barre-div{
     width: 55vw;
-    border-top: 1px solid #c2c2c2;
-    border-bottom: 1px solid #c2c2c2;
+    border-top: 1px solid rgba(160, 160, 160, 0.3);
 }
 .petit-blog{
-    width: 55vw;
     margin: 5vh 0;
-    border: 0.5px solid #c2c2c2;
+    border: 0.5px solid rgba(160, 160, 160, 0.3);
     background-color: #FFFFFF;
 }
 
@@ -117,9 +119,7 @@ img{
     margin-top: 0;
 }
 .div-image-blog{
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
+    margin-top: 4vh;
 }
 .image-blog{
     margin: auto 0;
@@ -130,9 +130,7 @@ img{
     transform: scale(1.1);
 }
 
-.div-image-petit-blog{
-    margin: 0;
-    width: 100%;
+.div-hidden{
     overflow: hidden;
 }
 .div-image-raccourcie{
@@ -145,7 +143,6 @@ img{
 .image-petit-blog{
     width: 100%;
     margin: 0;
-    padding: 0;
     transition: 0.4s;
 }
 .image-petit-blog:hover{
@@ -155,15 +152,19 @@ img{
     padding: 2vh 20vw;
     text-align: justify;
     line-height: 4vh;
+    font-size: 18px;
 }
-.titre{
-    padding: 20px;
+.texte-about{
+    line-height: 3vh;
+    font-size: 15px;
 }
 .texte-titre{
     padding: 0 20vw;
     text-align: center;
     line-height: 4vh;
-    word-spacing: 10px;
+}
+.espace-lettre{
+    letter-spacing: 4px;
 }
 .texte-petit-blog{
     display: flex;
@@ -181,4 +182,7 @@ img{
     justify-content: space-around;
     align-items: center;
     width: 45vw;
+}
+.color-grisclair{
+    color: rgb(160, 160, 160);
 }
