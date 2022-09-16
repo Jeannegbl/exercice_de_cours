@@ -54,7 +54,7 @@ button{
 .bouton-navbar{
     height: 6vh;
     width: 15vw;
-    font-size: 30px;
+    font-size: 20px;
     border: none;
     border-left: 1px solid rgba(160, 160, 160, 0.3);
     background-color: transparent;
@@ -100,6 +100,13 @@ button{
     width: 55vw;
     border-top: 1px solid rgba(160, 160, 160, 0.3);
 }
+.raccourcie{
+    border-bottom: 1px dotted rgba(160, 160, 160, 0.3);
+    display: flex;
+}
+.raccourcie-dernier{
+    border-bottom: none;
+}
 .petit-blog{
     margin: 5vh 0;
     border: 0.5px solid rgba(160, 160, 160, 0.3);
@@ -134,11 +141,7 @@ img{
     overflow: hidden;
 }
 .div-image-raccourcie{
-    height: 10vh;
-    width: 8vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+    margin: 2vh 2vw;
 }
 .image-petit-blog{
     width: 100%;
@@ -155,13 +158,21 @@ img{
     font-size: 18px;
 }
 .texte-about{
-    line-height: 3vh;
+    line-height: 3.5vh;
     font-size: 15px;
 }
 .texte-titre{
     padding: 0 20vw;
     text-align: center;
     line-height: 4vh;
+}
+.petit-blog-titre{
+    font-size: 12px;
+    font-weight: 800;
+}
+.petit-blog-date{
+    font-size: 10px;
+    font-weight: 700;
 }
 .espace-lettre{
     letter-spacing: 4px;
@@ -185,4 +196,14 @@ img{
 }
 .color-grisclair{
     color: rgb(160, 160, 160);
+}
+.margin-fin{
+    margin: 2vh auto;
+    display: flex;
+    justify-content: space-around;
+}
+.credit{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
 }
