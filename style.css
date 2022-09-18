@@ -23,6 +23,7 @@ h1{
     font-size: 15px;
 }
 h2{
+    margin-top: 6vh;
     font-weight: 800;
     font-size: 20px;
 }
@@ -51,6 +52,9 @@ u, .pointiller{
 button{
     cursor: pointer;
 }
+.recherche{
+    display: none;
+}
 .bouton-navbar{
     height: 6vh;
     width: 15vw;
@@ -62,8 +66,8 @@ button{
 .bouton{
     background-color: transparent;
     border: 2px solid rgba(160, 160, 160, 0.3);
-    height: 10vh;
-    width: 55vw;
+    height: 7vh;
+    width: 77vw;
     margin: 40px 0;
     font-weight: 800;
 }
@@ -75,8 +79,8 @@ button{
     color: rgba(160, 160, 160, 0.3);
     background-color: transparent;
     border: 2px solid rgba(160, 160, 160, 0.3);
-    height: 10vh;
-    width: 55vw;
+    height: 7vh;
+    width: 77vw;
     font-weight: 800;
     cursor: auto;
 }
@@ -95,9 +99,14 @@ button{
     border-top: 1px solid rgba(160, 160, 160, 0.3);
     border-bottom: 1px solid rgba(160, 160, 160, 0.3);
 }
+.date-image-deuxieme-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .barre-div{
-    width: 55vw;
+    width: 77vw;
     border-top: 1px solid rgba(160, 160, 160, 0.3);
 }
 .raccourcie{
@@ -137,9 +146,6 @@ img{
 .div-hidden{
     overflow: hidden;
 }
-.div-image-raccourcie{
-    margin: 2vh 2vw;
-}
 .image-petit-blog{
     width: 100%;
     margin: 0;
@@ -149,7 +155,7 @@ img{
     transform: scale(1.1);
 }
 .texte-blog{
-    padding: 2vh 20vw;
+    padding: 2vh 10vw;
     text-align: justify;
     line-height: 4vh;
     font-size: 18px;
@@ -159,7 +165,7 @@ img{
     font-size: 15px;
 }
 .texte-titre{
-    padding: 0 20vw;
+    padding: 0 10vw;
     text-align: center;
     line-height: 4vh;
 }
@@ -173,6 +179,9 @@ img{
 }
 .espace-lettre{
     letter-spacing: 4px;
+}
+.espace-mot{
+    word-spacing: 5px;
 }
 .texte-petit-blog{
     display: flex;
@@ -195,14 +204,10 @@ img{
     color: rgb(160, 160, 160);
 }
 .margin-fin{
-    margin: 2vh auto;
+    margin: 4vh 0;
     display: flex;
     justify-content: space-around;
-}
-.credit{
-    margin-top: 4vh;
-    display: flex;
-    justify-content: center;
+    width: 35vw;
 }
 
 .logo {
@@ -226,3 +231,141 @@ img{
     margin-left: -0.25em;
     width: 4.5em;
 }
+
+.margin{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+
+@media screen and (min-width: 700px) {
+    h1{
+        border-right: 1px solid rgba(160, 160, 160, 0.3);
+    }
+    .lorem:after{
+        content: 'LOREM';
+    }
+    .ipsum:after{
+        content: "IPSUM";
+    }
+    .feugiat:after{
+        content: "FEUGIAT";
+    }
+    .tempus:after{
+        content: "TEMPUS";
+    }
+    .adipiscing:after{
+        content: "ADIPISCING";
+    }
+    .barre{
+        border-right: 1px solid rgba(160, 160, 160, 0.3);
+        padding: 2px 2vw 2px 0;
+    }
+    .recherche{
+        display: block;
+    }
+    .bouton-navbar{
+        height: 6vh;
+        width: 5vw;
+        font-size: 20px;
+        border: none;
+        border-left: 1px solid rgba(160, 160, 160, 0.3);
+        background-color: transparent;
+    }
+    .margin-header{
+        margin-right: 2vw;
+    }
+    .flex{
+        display: flex;
+    }
+    .centrer-texte{
+        align-items: center;
+    }
+    .grande-div{
+        border: none;
+    }
+    .premiere-div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 25vw;
+        padding-left: 9vw;
+    }
+    .titre-premiere-div{
+        padding: initial;
+        text-align: start;
+        line-height: 4vh;
+    }
+    .deuxieme-div{
+        flex-direction: column;
+        margin-top: -35vh;
+        margin-left: 35vw;
+        position: absolute;
+    }
+    .contenue-deuxieme-div{
+        width: 55vw;
+    }
+    .div-blog{
+        border: 1px solid rgba(160, 160, 160, 0.3);
+    }
+    .presentation-deuxieme-div{
+        display: flex;
+        border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+        padding: 0px 4vw;
+    }
+    .texte-deuxieme-div{
+        border-right: 1px solid rgba(160, 160, 160, 0.3);
+    }
+    .texte-titre{
+        text-align: initial;
+        padding: initial;
+    }
+    .date-image-deuxieme-div{
+        margin-left: 2vw;
+        margin-top: 3vw;
+        text-align: end;
+    }
+    .image-titre{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .nom:after{
+        content: "JANE DOE";
+    }
+    .texte-blog{
+        padding: 2vh 3vw;
+        text-align: initial;
+        line-height: 3vh;
+        font-size: 15px;
+    }
+    .fin-deuxieme-div{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .ligne-blog{
+        order: 1;
+        width: 15vw;
+    }
+    .bouton{
+        padding: 1vw;
+        width: auto;
+        font-size: 10px;
+    }
+    .bouton-retour{
+        padding: 1vw;
+        width: auto;
+        font-size: 10px;
+        margin-right: 1vw;
+    }
+    .barre-div{
+        width: auto;
+    }
+    .margin-fin{
+        width: 10vw;
+    }
+    .flex-row{
+        flex-direction: row;
+    }
+  }
