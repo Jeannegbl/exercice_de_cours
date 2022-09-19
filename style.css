@@ -309,6 +309,9 @@ img{
     .div-blog{
         border: 1px solid rgba(160, 160, 160, 0.3);
     }
+    .div-blog-fin{
+        margin: auto;
+    }
     .presentation-deuxieme-div{
         display: flex;
         border-bottom: 1px solid rgba(160, 160, 160, 0.3);
