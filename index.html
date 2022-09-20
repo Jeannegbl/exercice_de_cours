@@ -5,7 +5,7 @@
         <script src="https://kit.fontawesome.com/650a3ee550.js" crossorigin="anonymous"></script>
     </head>
     <header>
-        <div class="flex centrer-texte">
+        <div class="flex centrer-texte" id="navbarFlou" onclick="closeNav()">
             <h1 class="texte-hover espace-lettre margin-header">FUTURE IMPERFECT</h1>
             <p class="lorem texte-hover barre margin-header"></p>
             <p class="ipsum texte-hover barre margin-header"></p>
@@ -15,11 +15,45 @@
         </div>
         <div class="flex">
             <button class="color-grisclair bouton-navbar texte-hover recherche"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="color-grisclair bouton-navbar texte-hover"><i class="fa-solid fa-bars"></i></button>
+            <div id="navbarPlus" class="navbar">
+                <div class="div-navbar">
+                    <a href="#" class="recherche-navbar logo-recherche texte-navbar">
+                        <input type="text" placeholder="Search" name="recherche" class="champs-recherche">
+                    </a>
+                </div>
+                <div class="div-navbar">
+                    <a href="#" class="texte-navbar"><h2 class="texte-hover titre-navbar espace-lettre">LOREM IPSUM<p class="sous-titre-navbar texte-hover espace-lettre">FEUGIAT TEMPUS VEROEROS DOLOR</p></h2></a>
+                    <a href="#" class="texte-navbar"><h2 class="texte-hover titre-navbar espace-lettre">DOLOR SIT AMET<p class="sous-titre-navbar texte-hover espace-lettre">SED VITAE JUSTO CONDIMENTUM</p></h2></a>
+                    <a href="#" class="texte-navbar"><h2 class="texte-hover titre-navbar espace-lettre">FEUGIAT VEROEROS<p class="sous-titre-navbar texte-hover espace-lettre">PHASELLUS SED ULTRICIES MI CONGUE</p></h2></a>
+                    <a href="#" class="texte-navbar"><h2 class="texte-hover titre-navbar fin-titre-navbar espace-lettre">ETIAM SED CONSEQUAT<p class="sous-titre-navbar texte-hover espace-lettre">PORTA LECTUS AMET ULTRICIES</p></h2></a>
+                </div>
+                <div class="div-navbar div-bouton-navbar">
+                    <button class="bouton-font bouton bouton-log-in espace-lettre">LOG IN</button>
+                </div>
+            </div>
+            <button class="color-grisclair bouton-navbar texte-hover" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            <script>
+                function openNav() {
+                    if (x.matches) {
+                        document.getElementById("navbarPlus").style.width = "25vw";
+                    }else{
+                        document.getElementById("navbarPlus").style.width = "80vw"; 
+                    }
+                    document.getElementById("fondFlou").style.filter = "opacity(15%)";
+                    document.getElementById("navbarFlou").style.filter = "opacity(15%)";
+                }
+
+                function closeNav() {
+                    document.getElementById("navbarPlus").style.width = "0";
+                    document.getElementById("fondFlou").style.filter = "none";
+                    document.getElementById("navbarFlou").style.filter = "none";
+                }
+                var x = window.matchMedia("(min-width: 700px)")
+            </script>
         </div>
     </header>
     <body>
-        <div class="grande-div">
+        <div class="grande-div" onclick="closeNav()" id="fondFlou">
             <div class="flex-column margin premiere-div">
                 <a class="logo">
                     <img src="https://html5up.net/uploads/demos/future-imperfect/images/logo.jpg">
