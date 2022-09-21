@@ -374,9 +374,8 @@ img{
         line-height: 4vh;
     }
     .deuxieme-div{
-        flex-direction: column;
-        margin-top: -35vh;
-        margin-left: 35vw;
+        top: 12vh;
+        right: 8vw;
         position: absolute;
     }
     .contenue-deuxieme-div{
